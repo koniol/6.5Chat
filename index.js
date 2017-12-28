@@ -5,7 +5,7 @@ const socketIo = require('socket.io');
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
-const UsersService = require('./client/UsersService');
+const UsersService = require('./UsersService');
 
 const userService = new UsersService();
 
